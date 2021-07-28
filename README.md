@@ -1,5 +1,7 @@
 # Photo Tagging App (Where's Waldo?)
 
+
+- <a href="https://kfig21.github.io/photo_tagging_app/" target="_blank" rel="noopener noreferrer">View the project here!</a>
 - Made for The Odin Project curriculum
 - React based application
 - Utilized Firebase-firestore for a back end database
