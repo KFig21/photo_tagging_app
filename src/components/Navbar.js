@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 // Material UI
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
+import StarsOutlinedIcon from "@material-ui/icons/StarsOutlined";
+import PermIdentityOutlinedIcon from "@material-ui/icons/PermIdentityOutlined";
+import HomeIcon from "@material-ui/icons/Home";
 // Components
 import Character from "../Characters";
 // logo
@@ -29,62 +30,91 @@ export default function Navbar({
   });
 
   return (
-    <AppBar className="navbar-container">
-      <Toolbar className="navbar">
-        {inHome === true && (
-          <>
-            <button className="left-nav-button nav-button">
-              <Link style={{ color: "#FFF" }} to="/leaderboard">
-                Leaderboard
-              </Link>
-            </button>
-            <img className="logo" src={logo} alt="logo" />
+    <div className="navbar">
+      {inHome === true && (
+        <>
+          <div className="nav-button-container">
+            <Link style={{ color: "#FFF" }} to="/leaderboard">
+              <button className="left-nav-button nav-button">
+                <span className="nav-button-span">Leaderboard</span>
+                <StarsOutlinedIcon className="nav-button-icon" />
+              </button>
+            </Link>
+          </div>
+          <img className="logo" src={logo} alt="logo" />
+          <div className="nav-button-container">
             <button className="right-nav-button nav-button">
               <Link style={{ color: "#FFF" }} to="/info">
-                Info
+                <span className="nav-button-span">Info</span>
+                <PermIdentityOutlinedIcon className="nav-button-icon" />
               </Link>
             </button>
-          </>
-        )}
-        {inGame === true && (
-          <>
-            <button className="left-nav-button nav-button">
-              <Link style={{ color: "#FFF" }} to="/">
-                Home
-              </Link>
-            </button>
-            <div className="nav-container">{gameCharacters}</div>
-          </>
-        )}
-        {inLeaderboard === true && (
-          <>
-            <button
-              className="left-nav-button nav-button"
-              onClick={() => setInGame(false)}
-            >
-              <Link style={{ color: "#FFF" }} to="/">
-                Home
-              </Link>
-            </button>
-            <span className="leaderboard-title">Leaderboard</span>
-          </>
-        )}
-        {inInfo === true && (
-          <>
-            <button className="left-nav-button nav-button">
-              <Link style={{ color: "#FFF" }} to="/">
-                Home
-              </Link>
-            </button>
-            <img className="logo" src={logo} alt="logo" />
+          </div>
+        </>
+      )}
+      {inGame === true && (
+        <>
+          <div className="nav-button-container">
+            <Link style={{ color: "#FFF" }} to="/">
+              <button className="left-nav-button nav-button">
+                <span className="nav-button-span">Home</span>
+                <HomeIcon className="nav-button-icon" />
+              </button>
+            </Link>
+          </div>
+
+          <div className="nav-container">{gameCharacters}</div>
+
+          <div className="nav-button-container nav-button-container-empty"></div>
+        </>
+      )}
+      {inLeaderboard === true && (
+        <>
+          <div className="nav-button-container">
+            <Link style={{ color: "#FFF" }} to="/">
+              <button
+                className="left-nav-button nav-button"
+                onClick={() => setInGame(false)}
+              >
+                <span className="nav-button-span">Home</span>
+                <HomeIcon className="nav-button-icon" />
+              </button>
+            </Link>
+          </div>
+          <span className="leaderboard-title">Leaderboard</span>
+          <div className="nav-button-container">
             <button className="right-nav-button nav-button">
-              <Link style={{ color: "#FFF" }} to="/leaderboard">
-                Leaderboard
+              <Link style={{ color: "#FFF" }} to="/info">
+                <span className="nav-button-span">Info</span>
+                <PermIdentityOutlinedIcon className="nav-button-icon" />
               </Link>
             </button>
-          </>
-        )}
-      </Toolbar>
-    </AppBar>
+          </div>
+        </>
+      )}
+      {inInfo === true && (
+        <>
+          <div className="nav-button-container">
+            <Link style={{ color: "#FFF" }} to="/">
+              <button className="left-nav-button nav-button">
+                <span className="nav-button-span">Home</span>
+                <HomeIcon className="nav-button-icon" />
+              </button>
+            </Link>
+          </div>
+
+          <img className="logo" src={logo} alt="logo" />
+
+          <div className="nav-button-container">
+            <Link style={{ color: "#FFF" }} to="/leaderboard">
+              <button className="right-nav-button nav-button">
+                <span className="nav-button-span">Leaderboard</span>
+                <StarsOutlinedIcon className="nav-button-icon" />
+              </button>
+            </Link>
+          </div>
+        </>
+      )}
+    </div>
   );
 }

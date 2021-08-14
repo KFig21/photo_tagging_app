@@ -1,21 +1,21 @@
 import React from "react";
 
-const Card = (props) => {
+const Card = ({ active, alt, img, small, clicked }) => {
   return (
     <div
       className={`${
-        props.active ? "leaderboard-level-container-active " : " "
-      }  leaderboard-level-container`}
-      onClick={props.clicked}
+        active ? "leaderboard-level-container-active " : " "
+      }  leaderboard-level-container ${alt}`}
+      onClick={clicked}
     >
       <img
         className={`${
-          props.active ? "leaderboard-level-image-active " : " "
+          active ? "leaderboard-level-image-active " : " "
         }  leaderboard-level-image`}
-        src={props.img}
-        alt={props.alt}
+        src={img}
+        alt={alt}
       />
-      <span className="leaderboard-level-name">{props.children}</span>
+      <span className="leaderboard-level-name">{alt}</span>
     </div>
   );
 };
