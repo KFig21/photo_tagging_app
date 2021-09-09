@@ -223,7 +223,7 @@ a {
   margin: 5px 50px;
 }
 .faded {
-  opacity: 40%;
+  opacity: 0.3;
 }
 .character-img {
   max-height: 55px;
