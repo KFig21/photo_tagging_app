@@ -17,13 +17,7 @@
 - Explitive usernames submitted to the leaderboard are censored
 - Responsive Design
 
-<h3> Things I need guidance with: </h3>
-
-- Creating custom hooks to better implement my variables
-- Using libraries like Material UI or Tailwind so I dont spend so much time working on a CSS file
-
-<h3>
-        Game console images provided by
+<h3>Game console images provided by
         <a
           href="https://www.artstation.com/pierreroussel"
           target="_blank"
