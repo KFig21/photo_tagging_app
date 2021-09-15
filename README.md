@@ -22,6 +22,47 @@
 - Creating custom hooks to better implement my variables
 - Using libraries like Material UI or Tailwind so I dont spend so much time working on a CSS file
 
+<p>
+        Game console images provided by
+        <a
+          href="https://www.artstation.com/pierreroussel"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Pierre Roussel
+        </a>
+      </p>
+      <ul className="info-ul">
+        <li className="info-li">
+          <a
+            href="https://www.artstation.com/artwork/oOVVlJ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Full collection here at Artstation
+          </a>
+        </li>
+        <li className="info-li">
+          <a
+            href="https://www.etsy.com/shop/Angerinet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Prints available on his Etsy shop
+          </a>
+        </li>
+        <li className="info-li">
+          <a
+            href="https://www.instagram.com/angerinet/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Follow on Instagram @angerinet
+          </a>
+        </li>
+      </ul>
+
 -----------------------------
 
 <h3>Thanks for checking out my project! Any && all feedback is appreciated!</h3>
