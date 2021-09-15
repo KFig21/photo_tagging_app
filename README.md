@@ -22,7 +22,7 @@
 - Creating custom hooks to better implement my variables
 - Using libraries like Material UI or Tailwind so I dont spend so much time working on a CSS file
 
-<h4>
+<h3>
         Game console images provided by
         <a
           href="https://www.artstation.com/pierreroussel"
@@ -31,7 +31,7 @@
         >
           Pierre Roussel
         </a>
-        </h4>
+        </h3>
       <ul className="info-ul">
         <li className="info-li">
           <a
