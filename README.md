@@ -6,16 +6,22 @@
 <h3>Summary</h3>
 <p>This was the backend project for The Odin Project JavaScript curriculum. The goal of the project is to create a 'Wheres Waldo' type of game that incorporates a backend. Players select a level and must find 3 hidden characters. The characters coordinates are used to identify their location in the level, selecting the correct coordinates (along with the character) will mark a character as found. Firebase is used as a backend to store the game data & highscores for each level. This project as made with the React JS Library, CSS, and Firebase.</p>
 
-<h3>Demo GIF</h3>
-
-![](demo.gif)
-
 <h3>Features:</h3>
 
 - Global Leaderboard for 8 unique levels that updates in realtime
 - Use of firebase-firestore for a live back end database
 - Explitive usernames submitted to the leaderboard are censored
 - Responsive Design
+
+<h3>Demo GIF</h3>
+
+<h4>Desktop</h4>
+
+![](demo.gif)
+
+<h4>Mobile</h4>
+
+<img src="demoMobile.gif" width="250"/>
 
 <h3>Game console images provided by
         <a
