@@ -4,7 +4,14 @@
 <p><a href="https://kfig21.github.io/photo_tagging_app/" target="_blank" rel="noopener noreferrer">View the project here!</a> 👀</p>
 
 <h3>Summary</h3>
-<p>This was the backend project for The Odin Project JavaScript curriculum. The goal of the project is to create a 'Wheres Waldo' type of game that incorporates a backend. Players select a level and must find 3 hidden characters. The characters coordinates are used to identify their location in the level, selecting the correct coordinates (along with the character) will mark a character as found. Firebase is used as a backend to store the game data & highscores for each level. This project as made with the React JS Library, CSS, and Firebase.</p>
+<p>This was the backend project for <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/where-s-waldo-a-photo-tagging-app" target="_blank" rel="noopener noreferrer">The Odin Project's</a> JavaScript curriculum. The goal of the project is to create a 'Wheres Waldo' type of game that incorporates a backend. Players select a level and must find 3 hidden characters. The characters coordinates are used to identify their location in the level, selecting the correct coordinates (along with the character) will mark a character as found. Firebase is used as a backend to store the game data & highscores for each level. This project as made with the React JS Library, CSS, and Firebase.</p>
+
+ <h3>Technologies:</h3>
+  <ul>
+  <li>ReactJS</li>
+  <li>CSS</li>
+  <li>Firebase</li>
+ </ul>
 
 <h3>Features:</h3>
 
